@@ -6,7 +6,7 @@
 
 body {
   font-family: sans-serif;
-  background: url("../src/resource/background.jpg");
+  background: url("./resource/background.jpg");
   background-size: cover;
 }
 

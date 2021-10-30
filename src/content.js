@@ -1,3 +1,7 @@
+import logo from "./resource/main-icon.png";
+import mobile from "./resource/mobile-icon.png";
+import location from "./resource/location-ico.png";
+
 const createContent = function (
   component,
   clas = null,
@@ -26,13 +30,7 @@ const createMainPage = () => {
   createContent("header", "main-header", "#content");
   createContent("div", "tittle", ".main-header");
   createContent("h1", "main-tittle", ".tittle", "Don Carlos");
-  createContent(
-    "img",
-    "logo",
-    ".tittle",
-    null,
-    "../src/resource/main-icon.png"
-  );
+  createContent("img", "logo", ".tittle", null, logo);
   createContent(
     "h2",
     "main-sub",
@@ -54,13 +52,7 @@ const createMainPage = () => {
   createContent("p", "sec2-schu", ".section-2", "weekend: 8am - 10pm");
   createContent("div", "section-3", ".main-content");
   createContent("div", "location-box", ".section-3");
-  createContent(
-    "img",
-    null,
-    ".location-box",
-    null,
-    "../src/resource/location-ico.png"
-  );
+  createContent("img", null, ".location-box", null, location);
 
   createContent(
     "p",
@@ -68,16 +60,8 @@ const createMainPage = () => {
     ".location-box",
     "1024 Oakwood Ave San Diego, CA 22434"
   );
-  createContent(
-    "img",
-    null,
-    ".location-box",
-    null,
-    "../src/resource/mobile-icon.png"
-  );
+  createContent("img", null, ".location-box", null, mobile);
   createContent("p", null, ".location-box", "(222)-888 5555");
 };
-
-createMainPage();
 
 export { createMainPage };
