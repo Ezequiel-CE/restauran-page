@@ -26,8 +26,20 @@ const createContent = function (
   pare.appendChild(el);
 };
 
+const createNav = () => {
+  createContent("nav", "navbar", "#content");
+  createContent("div", "container-logo", ".navbar");
+  createContent("img", "nav-logo", ".container-logo", null, logo);
+  createContent("p", "nav-tittle", ".container-logo", "Don Carlos");
+  createContent("div", "container-btns", ".navbar");
+  createContent("button", "nav-btn", ".container-btns", "Home");
+  createContent("button", "nav-btn", ".container-btns", "Menu");
+  createContent("button", "nav-btn", ".container-btns", "Info");
+};
+
 const createMainPage = () => {
-  createContent("header", "main-header", "#content");
+  createContent("div", "display-web", "#content");
+  createContent("header", "main-header", ".display-web");
   createContent("div", "tittle", ".main-header");
   createContent("h1", "main-tittle", ".tittle", "Don Carlos");
   createContent("img", "logo", ".tittle", null, logo);
@@ -39,7 +51,7 @@ const createMainPage = () => {
     null
   );
   createContent("h3", "main-sub-sub", ".main-header", "Tasty and affordable!");
-  createContent("div", "main-content", "#content");
+  createContent("div", "main-content", ".display-web");
   createContent("div", "section-2", ".main-content");
   createContent(
     "p",
@@ -64,4 +76,4 @@ const createMainPage = () => {
   createContent("p", null, ".location-box", "(222)-888 5555");
 };
 
-export { createMainPage };
+export { createMainPage, createNav, createContent };
