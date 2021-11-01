@@ -1,4 +1,4 @@
-import { createContent, createNav } from "./content";
+import { createContent } from "./content";
 import pizza from "./resource/pizza.jpg";
 import burger from "./resource/burger.jpg";
 import steak from "./resource/steak.jpg";
@@ -9,7 +9,7 @@ import cake from "./resource/cake.jpg";
 const createMenu = () => {
   createContent("div", "display-web", "#content");
   createContent("div", "section-menu", ".display-web");
-  createContent("h1", "section-tittle", ".section-menu", "This is our menu");
+  createContent("h1", "menu-head", ".section-menu", "This is our menu");
   createContent("div", "menu-container", ".section-menu");
   //cartas
   createContent("div", "menu-car1", ".menu-container");

@@ -133,6 +133,7 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 20px;
   padding: 20px;
+  margin-bottom: 40px;
 }
 
 .location-box {
@@ -194,4 +195,20 @@ body {
   width: 200px;
   height: auto;
   border-radius: 5px;
+}
+
+/* info */
+
+.info-img {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.info-text {
+  width: 80%;
+  margin: 40px auto;
+  font-size: 20px;
+  text-align: justify;
 }
